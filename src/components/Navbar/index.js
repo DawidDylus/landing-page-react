@@ -1,11 +1,8 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-//import { NavLink } from 'react-router-dom';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu, NavLinks, NavBtnLink, NavBtn } from "./NavbarElements";
 
-export const Navbar = () => {
-
-
+export const Navbar = ({ toggle }) => {
 
 
 
@@ -15,7 +12,7 @@ export const Navbar = () => {
 
                 <NavbarContainer>
                     <NavLogo to="/">Dylus</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
