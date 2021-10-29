@@ -1,0 +1,16 @@
+export const homeObjOne = {
+id: 'about',
+lightBg: false,
+lightText: true,
+lightTextDesc: true,
+topLine: 'Card One',
+headline: 'Random text about the Card One.',
+description: 'Get this card ........................................ some description',
+buttonLabel: 'Get Started',
+imgStart: false,
+img: require('../../images/car.svg'),
+alt: 'Car',
+dark: true,
+primary: true,
+darkText: false,
+};
