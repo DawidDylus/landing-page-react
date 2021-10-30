@@ -58,6 +58,7 @@ font-weight: 700px;
 letter-spacing: 1.4px;
 text-transform: uppercase;
 margin-bottom: 16px;
+font-weight: bold;
 `;
 
 export const Heading = styled.h1`
