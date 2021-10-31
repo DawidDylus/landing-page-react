@@ -15,8 +15,14 @@ import {
     SocialMediaWrap,
     WebsiteRights,
 } from './FooterElements';
+import { animateScroll as scroll } from 'react-scroll';
 
 export const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
 
@@ -72,7 +78,7 @@ export const Footer = () => {
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo to="/">
+                            <SocialLogo to="/" onClick={toggleHome}>
                                 Dylus
                             </SocialLogo>
                             <WebsiteRights>Dylus Dawid ╬ {new Date().getFullYear()} All rights reserved.</WebsiteRights>
