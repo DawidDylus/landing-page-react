@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Sidebar } from '../components/Sidebar';
+import { Signin } from '../components/Signin';
 
 export const SignInPage = () => {
 
@@ -13,6 +14,7 @@ export const SignInPage = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
+            <Signin />
         </>
     );
 };
